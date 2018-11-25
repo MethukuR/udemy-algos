@@ -8,6 +8,16 @@
 // Example:
 //   fib(4) === 3
 
-function fib(n) {}
+function fib(n) {
+    return fibonacci(n,1)
+}
+
+function fibonacci(input, result){
+    if(input <= 1){
+        return result;
+    }
+
+    return fibonacci(input-1, result*input);
+}
 
 module.exports = fib;
