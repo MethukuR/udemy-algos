@@ -10,7 +10,16 @@
 // on the tree class.  Each method should accept a
 // function that gets called with each element in the tree
 
-class Node {}
+let counter = 0;
+class Node {
+    constructor(data){
+        this.isVisited = false,
+        this.neighbours = [],
+        this.data = data,
+        this.startTime,
+        this.endTime
+    }
+}
 
 class Tree {}
 
