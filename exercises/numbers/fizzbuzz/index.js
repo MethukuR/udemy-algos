@@ -27,4 +27,24 @@ function fizzBuzz(n) {
     }
 }
 
+const output = [ "fizzbuzz", "", "", "fizz", "", "buzz", "fizz", "", "", "fizz", "buzz", "", "fizz", "", "" ];
+
+function fizzbuzz1(n){
+    let outputArr = [];
+    for(let i = 1; i <= n ; ++i){
+        if((i%3) === 0 || (i%5) === 0){
+            outputArr.push(output[i%15])
+        }
+        else{
+            outputArr.push(i);
+        }
+    }
+
+    console.log(outputArr);
+
+
+    }
+
+    fizzbuzz1(25);
+
 module.exports = fizzBuzz;
