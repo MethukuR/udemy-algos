@@ -27,7 +27,7 @@ function fizzBuzz(n) {
     }
 }
 
-const output = [ "fizzbuzz", "", "", "fizz", "", "buzz", "fizz", "", "", "fizz", "buzz", "", "fizz", "", "" ];
+const output = [ "fizz buzz", "", "", "fizz", "", "buzz", "fizz", "", "", "fizz", "buzz", "", "fizz", "", "" ];
 
 function fizzbuzz1(n){
     let outputArr = [];
@@ -36,7 +36,7 @@ function fizzbuzz1(n){
             outputArr.push(output[i%15])
         }
         else{
-            outputArr.push(i);
+            outputArr.push(output[i%15]+i);
         }
     }
 
